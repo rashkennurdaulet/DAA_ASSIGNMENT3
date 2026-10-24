@@ -30,7 +30,7 @@ public class PrimMST {
 
         while (!pq.isEmpty() && mstEdges.size() < graph.V - 1) {
             Edge edge = pq.poll();
-            operations++; // Извлечение из очереди
+            operations++;
 
             if (visited[edge.source] && visited[edge.dest]) continue;
 

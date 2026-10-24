@@ -36,7 +36,7 @@ public class KruskalMST {
             if (dsu.union(edge.source, edge.dest)) {
                 mstEdges.add(edge);
                 totalWeight += edge.weight;
-                // Дерево построено, если добавлено V - 1 ребер
+
                 if (mstEdges.size() == graph.V - 1) {
                     break;
                 }
