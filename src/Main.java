@@ -76,5 +76,9 @@ public class Main {
                 System.out.printf("To District %d: UNREACHABLE%n", i);
             }
         }
+
+        System.out.println("\n--- Task 4: Running Experiments ---");
+        Experiment experiment = new Experiment();
+        experiment.runAllExperiments("results/tables/benchmark.csv");
     }
 }
